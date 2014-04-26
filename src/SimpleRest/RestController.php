@@ -5,7 +5,7 @@ namespace SimpleRest;
 /*
  * Copyright 2011 <http://voidweb.com>.
  * Author: Deepesh Malviya <https://github.com/deepeshmalviya>.
- * 
+ *
  * Simple-REST - Lightweight PHP REST Library
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
@@ -18,7 +18,7 @@ namespace SimpleRest;
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations
- * under the License. 
+ * under the License.
  */
 
 /**
@@ -31,7 +31,7 @@ abstract class RestController {
 	protected $responseStatus;
 
 	public function __construct($request) {
-		$this->request = $request;		
+		$this->request = $request;
 	}
 
 	final public function getResponseStatus() {
@@ -52,5 +52,4 @@ abstract class RestController {
 	abstract public function put();
 	abstract public function delete();
 	// @codeCoverageIgnoreEnd
-	
 }
