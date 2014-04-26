@@ -71,7 +71,7 @@ class Rest {
 				$value = trim($value);
 			}
 		}
-		array_walk_recursive($this->request, 'trim_value');
+		//array_walk_recursive($this->request, 'trim_value');
 	}
 
 	/**
@@ -124,7 +124,7 @@ class Rest {
 		foreach(glob(APPLICATION_PATH . '/Controllers/*.php', GLOB_NOSORT) as $controller) {
 			$controller = basename($controller, '.php');
 			if(strnatcasecmp($expected, $controller) == 0) {
-				return 'Controllers_' . $controller;
+				return APPLICATION_NAMESPACE . $controller;
 			}
 		}
 		return null;
