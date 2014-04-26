@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpelRest;
+namespace SimpleRest;
 
 /*
  * Copyright 2011 <http://voidweb.com>.
